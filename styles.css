@@ -6,6 +6,14 @@
     background-color: rgb(44, 62, 80) !important;
 }
 
+.color-primary {
+    color: rgb(26, 188, 156);
+}
+
+.color-secondary {
+    color: rgb(44, 62, 80);
+}
+
 .picture {
     width: 16em;
     height: 16em;
@@ -25,4 +33,43 @@
     max-width: 7em;
     border-radius: 1em;
     margin-left: 1em;
+}
+
+.portfolio {
+    padding: 6em 0;
+}
+
+.divider-line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-line-custom {
+    width: 100%;
+    max-width: 5.8em;
+    height: 0.25rem;
+    background-color: rgb(33, 37, 41);
+}
+
+.divider-line-icon {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+}
+
+.cover-image {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(red, green, blue, 0.7);
+}
+
+.cover-image:hover {
+    opacity: 1;
+}
+
+.cover-wrapper {
+    position: relative;
 }
