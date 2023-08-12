@@ -14,9 +14,12 @@
     color: rgb(44, 62, 80);
 }
 
+.color-white {
+    color: white;
+}
+
 .picture {
     width: 16em;
-    height: 16em;
 }
 
 .header {
@@ -35,7 +38,7 @@
     margin-left: 1em;
 }
 
-.portfolio {
+.section-padding {
     padding: 6em 0;
 }
 
@@ -44,13 +47,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .divider-line-custom {
     width: 100%;
     max-width: 5.8em;
     height: 0.25rem;
-    background-color: rgb(33, 37, 41);
+    border: 1rem;
+    border-radius: 1rem;
 }
 
 .divider-line-icon {
@@ -73,3 +78,4 @@
 .cover-wrapper {
     position: relative;
 }
+
