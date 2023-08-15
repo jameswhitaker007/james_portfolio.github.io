@@ -158,17 +158,88 @@
         </div>
     </section>
 
-    <!-- Modals -->
+    <!--Contact Section-->
+    <section class="page-section section-padding" id="contact">
+        <div class="container">
+            <h2 class="text-center text-uppercase fs-1 color-secondary">contact me</h2>
+        </div>
+        <div class="divider-line mb-5">
+            <div class="divider-line-custom bg-secondary"></div>
+            <div class="divider-line-icon"><i class="fas fa-star color-secondary"></i></div>
+            <div class="divider-line-custom bg-secondary"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-5 m-auto ">
+                <form>
+                    <div class="form-group">
+                        <input
+                            class="form-control form-control-lg border-top-0 border-end-0 border-start-0 rounded-0 fs-4"
+                            type="text" placeholder="Full name" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input
+                            class="form-control form-control-lg border-top-0 border-end-0 border-start-0 rounded-0 fs-4 mt-5"
+                            type="email" placeholder="Email address" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input
+                            class="form-control form-control-lg border-top-0 border-end-0 border-start-0 rounded-0 fs-4 mt-5"
+                            type="text" placeholder="Phone number" id="phone" required />
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control border-top-0 border-end-0 border-start-0 rounded-0 fs-4 mt-5 ps-3"
+                            rows="3" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg bg-primary text-white mt-3 pt-lg-3 pe-lg-4 pb-lg-3 ps-lg-4">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <!--<form>
+            <div class="col-lg-6 m-auto">
+                <div class="position-relative">
+                    <label for="name" class="position-absolute">Full name</label>
+                    <input type="text" class="form-control border-top-0 border-end-0 border-start-0 rounded-0" id="name"
+                        aria-describedby="nameHelp" placeholder="" />
+                </div>
+
+
+
+                <input type="email" class="form-control border-top-0 border-end-0 border-start-0 rounded-0" id="email"
+                    aria-describedby="emailHelp" placeholder="Email address" />
+                <input type="number" class="form-control border-top-0 border-end-0 border-start-0 rounded-0"
+                    id="phoneNumber" aria-describedby="phoneNumberHelp" placeholder="Phone Number" />
+                <textarea id="message" class="form-control border-top-0 border-end-0 border-start-0 rounded-0"
+                    aria-describedby="messageHelp" placeholder="Message"></textarea>
+                <button type="button" class="btn bg-primary d-block text-white">Send</button>
+            </div>
+        </form>-->
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row bg-secondary">
+                <div class="col-lg-3 m-auto">
+                    <h2>Location</h2>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Section -->
+
+    <!-- Modal 1 -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content p-4">
                 <button type="button" class="btn ms-auto d-block" data-dismiss="modal" aria-label="close"><i
-                        class="fa-solid fa-x fs-3"></i></button>
+                        class="fas fa-solid fa-x fs-3"></i></button>
                 <div class="modal-header">
                     <div class="w-100 d-flex flex-column">
                         <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 1</h1>
-                        <div class="divider-line mb-5">
+                        <div class="divider-line mb-2">
                             <div class="divider-line-custom bg-secondary"></div>
                             <div class="divider-line-icon"><i class="fas fa-star"></i></div>
                             <div class="divider-line-custom bg-secondary"></div>
@@ -180,39 +251,40 @@
                     lectus. Aliquam ac
                     mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
                 <div class="m-auto m-5"><button type="button" class="btn bg-primary text-white m-auto p-2"
+                        data-dismiss="modal"><i class="fas fa-solid fa-x fs-6"></i> Close Window</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content p-4">
+                <button type="button" class="btn ms-auto d-block" data-dismiss="modal" aria-label="close"><i
+                        class="fa-solid fa-x fs-1"></i></button>
+                <div class="modal-header">
+                    <div class="w-100 d-flex flex-column">
+                        <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 2</h1>
+                        <div class="divider-line mb-2">
+                            <div class="divider-line-custom bg-secondary"></div>
+                            <div class="divider-line-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-line-custom bg-secondary"></div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/portfolio-standin.png" alt="" class="img-fluid rounded" />
+                <p class="text-center mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac porta
+                    lectus. Aliquam ac
+                    mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
+                <div class="m-auto m-5"><button type="button" class="btn bg-primary text-white m-auto p-2"
                         data-dismiss="modal"><i class="fa-solid fa-x fs-6"></i> Close Window</button></div>
             </div>
         </div>
     </div>
 
-
-    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content p-4">
-            <button type="button" class="btn ms-auto d-block" data-dismiss="modal" aria-label="close"><i
-                    class="fa-solid fa-x fs-1"></i></button>
-            <div class="modal-header">
-                <div class="w-100 d-flex flex-column">
-                    <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 2</h1>
-                    <div class="divider-line mb-5">
-                        <div class="divider-line-custom bg-secondary"></div>
-                        <div class="divider-line-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-line-custom bg-secondary"></div>
-                    </div>
-                </div>
-            </div>
-            <img src="./images/portfolio-standin.png" alt="" class="img-fluid rounded" />
-            <p class="text-center mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac porta
-                lectus. Aliquam ac
-                mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
-            <div class="m-auto m-5"><button type="button" class="btn bg-primary text-white m-auto p-2"
-                    data-dismiss="modal"><i class="fa-solid fa-x fs-6"></i> Close Window</button></div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- Modal 3 -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content p-4">
@@ -221,7 +293,7 @@
                 <div class="modal-header">
                     <div class="w-100 d-flex flex-column">
                         <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 3</h1>
-                        <div class="divider-line mb-5">
+                        <div class="divider-line mb-2">
                             <div class="divider-line-custom bg-secondary"></div>
                             <div class="divider-line-icon"><i class="fas fa-star"></i></div>
                             <div class="divider-line-custom bg-secondary"></div>
@@ -238,33 +310,35 @@
         </div>
     </div>
 
+    <!-- Modal 4 -->
     <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content p-4">
-            <button type="button" class="btn ms-auto d-block" data-dismiss="modal" aria-label="close"><i
-                    class="fa-solid fa-x fs-1"></i></button>
-            <div class="modal-header">
-                <div class="w-100 d-flex flex-column">
-                    <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 4</h1>
-                    <div class="divider-line mb-5">
-                        <div class="divider-line-custom bg-secondary"></div>
-                        <div class="divider-line-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-line-custom bg-secondary"></div>
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content p-4">
+                <button type="button" class="btn ms-auto d-block" data-dismiss="modal" aria-label="close"><i
+                        class="fa-solid fa-x fs-1"></i></button>
+                <div class="modal-header">
+                    <div class="w-100 d-flex flex-column">
+                        <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 4</h1>
+                        <div class="divider-line mb-2">
+                            <div class="divider-line-custom bg-secondary"></div>
+                            <div class="divider-line-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-line-custom bg-secondary"></div>
+                        </div>
                     </div>
                 </div>
+                <img src="./images/portfolio-standin.png" alt="" class="img-fluid rounded" />
+                <p class="text-center mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac porta
+                    lectus. Aliquam ac
+                    mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
+                <div class="m-auto m-5"><button type="button" class="btn bg-primary text-white m-auto p-2"
+                        data-dismiss="modal"><i class="fa-solid fa-x fs-6"></i> Close Window</button></div>
             </div>
-            <img src="./images/portfolio-standin.png" alt="" class="img-fluid rounded" />
-            <p class="text-center mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac porta
-                lectus. Aliquam ac
-                mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
-            <div class="m-auto m-5"><button type="button" class="btn bg-primary text-white m-auto p-2"
-                    data-dismiss="modal"><i class="fa-solid fa-x fs-6"></i> Close Window</button></div>
         </div>
     </div>
-</div>
 
-<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!--Modal 5 -->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content p-4">
@@ -273,7 +347,7 @@
                 <div class="modal-header">
                     <div class="w-100 d-flex flex-column">
                         <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 5</h1>
-                        <div class="divider-line mb-5">
+                        <div class="divider-line mb-2">
                             <div class="divider-line-custom bg-secondary"></div>
                             <div class="divider-line-icon"><i class="fas fa-star"></i></div>
                             <div class="divider-line-custom bg-secondary"></div>
@@ -290,31 +364,32 @@
         </div>
     </div>
 
+    <!-- Modal 6 -->
     <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content p-4">
-            <button type="button" class="btn ms-auto d-block" data-dismiss="modal" aria-label="close"><i
-                    class="fa-solid fa-x fs-1"></i></button>
-            <div class="modal-header">
-                <div class="w-100 d-flex flex-column">
-                    <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 6</h1>
-                    <div class="divider-line mb-5">
-                        <div class="divider-line-custom bg-secondary"></div>
-                        <div class="divider-line-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-line-custom bg-secondary"></div>
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content p-4">
+                <button type="button" class="btn ms-auto d-block" data-dismiss="modal" aria-label="close"><i
+                        class="fa-solid fa-x fs-1"></i></button>
+                <div class="modal-header">
+                    <div class="w-100 d-flex flex-column">
+                        <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 6</h1>
+                        <div class="divider-line mb-2">
+                            <div class="divider-line-custom bg-secondary"></div>
+                            <div class="divider-line-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-line-custom bg-secondary"></div>
+                        </div>
                     </div>
                 </div>
+                <img src="./images/portfolio-standin.png" alt="" class="img-fluid rounded" />
+                <p class="text-center mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac porta
+                    lectus. Aliquam ac
+                    mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
+                <div class="m-auto m-5"><button type="button" class="btn bg-primary text-white m-auto p-2"
+                        data-dismiss="modal"><i class="fa-solid fa-x fs-6"></i> Close Window</button></div>
             </div>
-            <img src="./images/portfolio-standin.png" alt="" class="img-fluid rounded" />
-            <p class="text-center mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac porta
-                lectus. Aliquam ac
-                mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
-            <div class="m-auto m-5"><button type="button" class="btn bg-primary text-white m-auto p-2"
-                    data-dismiss="modal"><i class="fa-solid fa-x fs-6"></i> Close Window</button></div>
         </div>
     </div>
-</div>
 
 </body>
 
