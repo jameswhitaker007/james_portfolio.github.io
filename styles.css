@@ -1,3 +1,10 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-width: 575px;
+}
+
 .bg-primary {
     background-color: rgb(26, 188, 156) !important;
 }
@@ -142,10 +149,31 @@ section h1 {
 }
 
 .modal-body {
-    padding: 0rem 11rem;
+    padding: 3rem 11rem;
 }
 
-body {
-    padding: 0;
-    margin: 0;
+@media screen and (max-width: 1199px) {
+    .modal-body {
+        padding: 3rem 9rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .modal-body {
+        padding: 3rem 2rem;
+    }
+
+    #footer-row {
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+    }
+
+    #location {
+        margin-bottom: 2rem;
+    }
+
+    #social {
+        margin-bottom: 3rem;
+    }
+
 }

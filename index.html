@@ -201,13 +201,13 @@
 
     <footer>
         <div class="container-fluid text-center text-white">
-            <div class="row bg-secondary d-flex justify-content-lg-center pt-5 pb-5">
-                <div class="col-lg-3  d-flex flex-column text-white">
-                    <h3 class="text-uppercase fw-bold">Location</h3>
-                    <p class="pt-2 fs-5">2215 John Daniel Drive<br />Clark, MO 65243</p>
+            <div class="row bg-secondary d-flex justify-content-xl-center justify-content-lg-around pt-5 pb-5" id="footer-row">
+                <div class="col-lg-3 d-flex flex-column text-white" id="location">
+                    <h4 class="text-uppercase fw-bold">Location</h4>
+                    <p class="pt-2 fs-5">2215 John Daniel Drive Clark, MO 65243</p>
                 </div>
-                <div class="col-lg-3  d-flex flex-column text-white">
-                    <h3 class="text-uppercase fw-bold">around the web</h3>
+                <div class="col-lg-3 d-flex flex-column text-white" id="social">
+                    <h4 class="text-uppercase fw-bold">around the web</h4>
                     <div class="pt-3 d-flex justify-content-between me-auto ms-auto"
                         style="width: 100%; max-width: 15rem;">
                         <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
@@ -218,8 +218,8 @@
 
                 </div>
                 <div class="col-lg-3 d-flex flex-column">
-                    <h3 class="text-uppercase fw-bold">about freelancer</h3>
-                    <p class="pt-2 fs-5">Freeland is a free to use, MIT licensed<br />Bootstrap theme created by <a
+                    <h4 class="text-uppercase fw-bold">about freelancer</h4>
+                    <p class="pt-2 fs-5">Freeland is a free to use, MIT licensed Bootstrap theme created by <a
                             href="#">Start Bootstrap</a> </p>
                 </div>
             </div>
@@ -236,9 +236,9 @@
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="p-4">
-                    <button type="button" class="btn ms-auto d-block x-dismiss" data-dismiss="modal" aria-label="close"><i
-                            class="fas fa-solid fa-x fs-1"></i></button>
+                <div class="pt-3 ps-3 pe-3">
+                    <button type="button" class="btn ms-auto d-block x-dismiss" data-dismiss="modal"
+                        aria-label="close"><i class="fa-regular fa-x fa-2xl"></i></i></button>
                     <div class="w-100 d-flex flex-column">
                         <h1 class="modal-title text-center color-secondary" id="exampleModalLabel">Portfolio 1</h1>
                         <div class="divider-line mb-2">
@@ -250,67 +250,78 @@
                 </div>
                 <div class="modal-body">
                     <img src="./images/portfolio_cabin.png" alt="" class="img-fluid rounded mt-0" />
-                    <p class="text-center mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
+                    <p class="text-center mt-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
                         porta
                         lectus. Aliquam ac
                         mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
-                   <button type="button" class="btn bg-primary text-white m-auto p-2 d-block"
-                            data-dismiss="modal"><i class="fas fa-solid fa-x fs-6"></i> Close Window</button>
+                    <button type="button" class="btn bg-primary text-white ms-auto me-auto pt-2 pb-2 ps-3 pe-3 d-block"
+                        data-dismiss="modal"><i class="fa-regular fa-x fa-xs pe-1" style="color: #ffffff;"></i></i></i>
+                        Close Window</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Modal 2 -->
+
     <div class="modal fade modal-xl" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content p-4">
-                <button type="button" class="btn ms-auto d-block" data-dismiss="modal" aria-label="close"><i
-                        class="fa-solid fa-x fs-1"></i></button>
-                <div class="modal-header">
+            <div class="modal-content">
+                <div class="pt-3 ps-3 pe-3">
+                    <button type="button" class="btn ms-auto d-block x-dismiss" data-dismiss="modal"
+                        aria-label="close"><i class="fa-regular fa-x fa-2xl"></i></i></button>
                     <div class="w-100 d-flex flex-column">
-                        <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 2</h1>
+                        <h1 class="modal-title text-center color-secondary" id="exampleModalLabel">Portfolio 2</h1>
                         <div class="divider-line mb-2">
                             <div class="divider-line-custom bg-secondary"></div>
-                            <div class="divider-line-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-line-icon color-secondary"><i class="fas fa-star"></i></div>
                             <div class="divider-line-custom bg-secondary"></div>
                         </div>
                     </div>
                 </div>
-                <img src="./images/portfolio_cake.png" alt="" class="img-fluid rounded" />
-                <p class="text-center mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac porta
-                    lectus. Aliquam ac
-                    mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
-                <div class="m-auto m-5"><button type="button" class="btn bg-primary text-white m-auto p-2"
-                        data-dismiss="modal"><i class="fa-solid fa-x fs-6"></i> Close Window</button></div>
+                <div class="modal-body">
+                    <img src="./images/portfolio_cake.png" alt="" class="img-fluid rounded mt-0" />
+                    <p class="text-center mt-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
+                        porta
+                        lectus. Aliquam ac
+                        mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
+                    <button type="button" class="btn bg-primary text-white ms-auto me-auto pt-2 pb-2 ps-3 pe-3 d-block"
+                        data-dismiss="modal"><i class="fa-regular fa-x fa-xs pe-1" style="color: #ffffff;"></i></i></i>
+                        Close Window</button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Modal 3 -->
+
     <div class="modal fade modal-xl" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content p-4">
-                <button type="button" class="btn ms-auto d-block" data-dismiss="modal" aria-label="close"><i
-                        class="fa-solid fa-x fs-1"></i></button>
-                <div class="modal-header">
+            <div class="modal-content">
+                <div class="pt-3 ps-3 pe-3">
+                    <button type="button" class="btn ms-auto d-block x-dismiss" data-dismiss="modal"
+                        aria-label="close"><i class="fa-regular fa-x fa-2xl"></i></i></button>
                     <div class="w-100 d-flex flex-column">
-                        <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 3</h1>
+                        <h1 class="modal-title text-center color-secondary" id="exampleModalLabel">Portfolio 3</h1>
                         <div class="divider-line mb-2">
                             <div class="divider-line-custom bg-secondary"></div>
-                            <div class="divider-line-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-line-icon color-secondary"><i class="fas fa-star"></i></div>
                             <div class="divider-line-custom bg-secondary"></div>
                         </div>
                     </div>
                 </div>
-                <img src="./images/circus_tent.png" alt="" class="img-fluid rounded" />
-                <p class="text-center mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac porta
-                    lectus. Aliquam ac
-                    mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
-                <div class="m-auto m-5"><button type="button" class="btn bg-primary text-white m-auto p-2"
-                        data-dismiss="modal"><i class="fa-solid fa-x fs-6"></i> Close Window</button></div>
+                <div class="modal-body">
+                    <img src="./images/circus_tent.png" alt="" class="img-fluid rounded mt-0" />
+                    <p class="text-center mt-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
+                        porta
+                        lectus. Aliquam ac
+                        mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
+                    <button type="button" class="btn bg-primary text-white ms-auto me-auto pt-2 pb-2 ps-3 pe-3 d-block"
+                        data-dismiss="modal"><i class="fa-regular fa-x fa-xs pe-1" style="color: #ffffff;"></i></i></i>
+                        Close Window</button>
+                </div>
             </div>
         </div>
     </div>
@@ -319,25 +330,29 @@
     <div class="modal fade modal-xl" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content p-4">
-                <button type="button" class="btn ms-auto d-block" data-dismiss="modal" aria-label="close"><i
-                        class="fa-solid fa-x fs-1"></i></button>
-                <div class="modal-header">
+            <div class="modal-content">
+                <div class="pt-3 ps-3 pe-3">
+                    <button type="button" class="btn ms-auto d-block x-dismiss" data-dismiss="modal"
+                        aria-label="close"><i class="fa-regular fa-x fa-2xl"></i></i></button>
                     <div class="w-100 d-flex flex-column">
-                        <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 4</h1>
+                        <h1 class="modal-title text-center color-secondary" id="exampleModalLabel">Portfolio 4</h1>
                         <div class="divider-line mb-2">
                             <div class="divider-line-custom bg-secondary"></div>
-                            <div class="divider-line-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-line-icon color-secondary"><i class="fas fa-star"></i></div>
                             <div class="divider-line-custom bg-secondary"></div>
                         </div>
                     </div>
                 </div>
-                <img src="./images/portfolio_controler.png" alt="" class="img-fluid rounded" />
-                <p class="text-center mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac porta
-                    lectus. Aliquam ac
-                    mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
-                <div class="m-auto m-5"><button type="button" class="btn bg-primary text-white m-auto p-2"
-                        data-dismiss="modal"><i class="fa-solid fa-x fs-6"></i> Close Window</button></div>
+                <div class="modal-body">
+                    <img src="./images/portfolio_controler.png" alt="" class="img-fluid rounded mt-0" />
+                    <p class="text-center mt-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
+                        porta
+                        lectus. Aliquam ac
+                        mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
+                    <button type="button" class="btn bg-primary text-white ms-auto me-auto pt-2 pb-2 ps-3 pe-3 d-block"
+                        data-dismiss="modal"><i class="fa-regular fa-x fa-xs pe-1" style="color: #ffffff;"></i></i></i>
+                        Close Window</button>
+                </div>
             </div>
         </div>
     </div>
@@ -346,25 +361,29 @@
     <div class="modal fade modal-xl" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content p-4">
-                <button type="button" class="btn ms-auto d-block m-0" data-dismiss="modal" aria-label="close"><i
-                        class="fa-solid fa-x fs-1"></i></button>
-                <div class="modal-header">
+            <div class="modal-content">
+                <div class="pt-3 ps-3 pe-3">
+                    <button type="button" class="btn ms-auto d-block x-dismiss" data-dismiss="modal"
+                        aria-label="close"><i class="fa-regular fa-x fa-2xl"></i></i></button>
                     <div class="w-100 d-flex flex-column">
-                        <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 5</h1>
+                        <h1 class="modal-title text-center color-secondary" id="exampleModalLabel">Portfolio 5</h1>
                         <div class="divider-line mb-2">
                             <div class="divider-line-custom bg-secondary"></div>
-                            <div class="divider-line-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-line-icon color-secondary"><i class="fas fa-star"></i></div>
                             <div class="divider-line-custom bg-secondary"></div>
                         </div>
                     </div>
                 </div>
-                <img src="./images/portfolio_safe.png" alt="" class="img-fluid rounded" />
-                <p class="text-center mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac porta
-                    lectus. Aliquam ac
-                    mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
-                <div class="m-auto m-5"><button type="button" class="btn bg-primary text-white m-auto p-2"
-                        data-dismiss="modal"><i class="fa-solid fa-x fs-6"></i> Close Window</button></div>
+                <div class="modal-body">
+                    <img src="./images/portfolio_safe.png" alt="" class="img-fluid rounded mt-0" />
+                    <p class="text-center mt-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
+                        porta
+                        lectus. Aliquam ac
+                        mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
+                    <button type="button" class="btn bg-primary text-white ms-auto me-auto pt-2 pb-2 ps-3 pe-3 d-block"
+                        data-dismiss="modal"><i class="fa-regular fa-x fa-xs pe-1" style="color: #ffffff;"></i></i></i>
+                        Close Window</button>
+                </div>
             </div>
         </div>
     </div>
@@ -373,25 +392,29 @@
     <div class="modal fade modal-xl" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content p-4">
-                <button type="button" class="btn ms-auto d-block" data-dismiss="modal" aria-label="close"><i
-                        class="fa-solid fa-x fs-1"></i></button>
-                <div class="modal-header">
+            <div class="modal-content">
+                <div class="pt-3 ps-3 pe-3">
+                    <button type="button" class="btn ms-auto d-block x-dismiss" data-dismiss="modal"
+                        aria-label="close"><i class="fa-regular fa-x fa-2xl"></i></i></button>
                     <div class="w-100 d-flex flex-column">
-                        <h1 class="modal-title text-center" id="exampleModalLabel">Portfolio 6</h1>
+                        <h1 class="modal-title text-center color-secondary" id="exampleModalLabel">Portfolio 6</h1>
                         <div class="divider-line mb-2">
                             <div class="divider-line-custom bg-secondary"></div>
-                            <div class="divider-line-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-line-icon color-secondary"><i class="fas fa-star"></i></div>
                             <div class="divider-line-custom bg-secondary"></div>
                         </div>
                     </div>
                 </div>
-                <img src="./images/portfolio_submarine.png" alt="" class="img-fluid rounded" />
-                <p class="text-center mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac porta
-                    lectus. Aliquam ac
-                    mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
-                <div class="m-auto m-5"><button type="button" class="btn bg-primary text-white m-auto p-2"
-                        data-dismiss="modal"><i class="fa-solid fa-x fs-6"></i> Close Window</button></div>
+                <div class="modal-body">
+                    <img src="./images/portfolio_submarine.png" alt="" class="img-fluid rounded mt-0" />
+                    <p class="text-center mt-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
+                        porta
+                        lectus. Aliquam ac
+                        mauris orci. Morbi lorem massa, volutpat ac vehicula sit amet, fringilla non ipsum.</p>
+                    <button type="button" class="btn bg-primary text-white ms-auto me-auto pt-2 pb-2 ps-3 pe-3 d-block"
+                        data-dismiss="modal"><i class="fa-regular fa-x fa-xs pe-1" style="color: #ffffff;"></i></i></i>
+                        Close Window</button>
+                </div>
             </div>
         </div>
     </div>
