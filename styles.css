@@ -174,3 +174,23 @@ section h1 {
     }
 
 }
+
+footer i {
+    color: white;
+}
+
+#facebook:hover {
+    color: rgb(24, 119, 242);
+}
+
+#twitter:hover {
+    color: rgb(29, 159, 242);
+}
+
+#linkedin:hover {
+    color: rgb(10, 102, 194)
+}
+
+#dribble:hover {
+    color: rgb(189,27,90)
+}
